@@ -18,7 +18,7 @@ def check_guess(guess: str, a_followers: int, b_followers: int) -> bool:
         return guess == 'b'
 
 def higher_lower_game():
-    print("📊 Welcome to Higher Lower Game!")
+    print(" Welcome to Higher Lower Game!")
     score = 0
     game_should_continue = True
     item_b = random.choice(DATA)
@@ -43,10 +43,10 @@ def higher_lower_game():
         clear_console()
         if is_correct:
             score += 1
-            print(f"✅ Correct! Current score: {score}")
+            print(f" Correct! Current score: {score}")
         else:
             game_should_continue = False
-            print(f"💀 Wrong. Final score: {score}")
+            print(f" Wrong. Final score: {score}")
 
 if __name__ == "__main__":
     higher_lower_game()
